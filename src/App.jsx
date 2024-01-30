@@ -3,6 +3,7 @@ import './App.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import HomeScreen from './pages/HomeScreen';
 import AboutScreen from './pages/About';
+import ErrorScreen from './pages/ErrorScreen';
 /* import {Container} from 'react-bootstrap' */
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
           <Route path='/' element={<HomeScreen/>} />
           {/* Agregamos otra Ruta de la cual quiero navehar */}
           <Route path='about' element={<AboutScreen/>} />
+          {/* Agregamos la pagina de error cuando la ruta no este definida */}
+          <Route path='*' element={<ErrorScreen/>} />
         </Routes>
       </BrowserRouter>
     </>
