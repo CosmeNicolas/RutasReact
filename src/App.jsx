@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import HomeScreen from './pages/HomeScreen';
 import AboutScreen from './pages/About';
 import ErrorScreen from './pages/ErrorScreen';
+import NavBarMenu from './components/NavBarMenu';
 /* import {Container} from 'react-bootstrap' */
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <NavBarMenu/>
         <Routes>
           {/* primera pagina de renderizado por eso colocamos la barra con el props path; q es la direccion de la ruta y el componente elemento que es el componete al q nos dirigimos  */}
           <Route path='/' element={<HomeScreen/>} />
