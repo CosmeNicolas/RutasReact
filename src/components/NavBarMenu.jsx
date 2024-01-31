@@ -34,6 +34,7 @@ const NavBarMenu = () => {
           <Nav className="me-auto">
           <NavLink className="nav-link" to="/" style={({isActive})=>(isActive ? activeStyle : undefined)} >Home</NavLink>
           <NavLink className="nav-link" to="/about" style={({isActive})=>(isActive ? activeStyle : undefined)} >About</NavLink>
+          <NavLink className="nav-link" to="/admin" style={({isActive})=>(isActive ? activeStyle : undefined)} >Admin</NavLink>
             {/* <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">About</Nav.Link> */}
           </Nav>
