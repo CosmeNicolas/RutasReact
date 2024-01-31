@@ -6,6 +6,7 @@ import AboutScreen from './pages/About';
 import ErrorScreen from './pages/ErrorScreen';
 import NavBarMenu from './components/NavBarMenu';
 import AdminScreen from './pages/AdminScreen';
+import ProtectedRoutes from './routes/ProtectedRoutes'
 /* import {Container} from 'react-bootstrap' */
 
 function App() {
@@ -21,8 +22,13 @@ function App() {
           {/* Agregamos otra Ruta de la cual quiero navehar */}
           <Route path='about' element={<AboutScreen/>} />
           {/* Ruta proteginda Administracion  */}
-           {/* Agregamos la pagina de error cuando la ruta no este definida */}
-           <Route path='admin' element={<AdminScreen/>} />
+           {/* Agregamos el componente admin y protegemos su ruta  */}
+           <Route path='admin' element=
+           {
+           <ProtectedRoutes>
+             <AdminScreen/>
+           </ProtectedRoutes>
+           } />
           {/* Agregamos la pagina de error cuando la ruta no este definida */}
           <Route path='*' element={<ErrorScreen/>} />
         </Routes>
