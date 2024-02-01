@@ -1,8 +1,7 @@
 import { Navigate  } from "react-router-dom"
 
-const ProtectedRoutes = ({children}) => {
+const ProtectedRoutes = ({children , auth}) => {
 
-    const auth = false;
     if(auth){
         return children
     } else {
