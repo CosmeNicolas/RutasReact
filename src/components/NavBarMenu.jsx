@@ -4,10 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from 'react-router-dom';
 
 
-
-
-
-
 const NavBarMenu = () => {
 
     let activeStyle = {
@@ -19,7 +15,7 @@ const NavBarMenu = () => {
     <>
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
         
                <img
               src='src\assets\dos-flechas.png'
