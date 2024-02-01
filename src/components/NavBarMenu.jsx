@@ -4,11 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from 'react-router-dom';
 
 
-
-
-
-
-const NavBarMenu = () => {
+const NavBarMenu = ( {LogIn, LogOut , auth}) => {
 
     let activeStyle = {
         textDecoration:'underline',
@@ -19,7 +15,7 @@ const NavBarMenu = () => {
     <>
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
         
                <img
               src='src\assets\dos-flechas.png'
@@ -34,9 +30,17 @@ const NavBarMenu = () => {
           <Nav className="me-auto">
           <NavLink className="nav-link" to="/" style={({isActive})=>(isActive ? activeStyle : undefined)} >Home</NavLink>
           <NavLink className="nav-link" to="/about" style={({isActive})=>(isActive ? activeStyle : undefined)} >About</NavLink>
-          <NavLink className="nav-link" to="/admin" style={({isActive})=>(isActive ? activeStyle : undefined)} >Admin</NavLink>
+          {/* condicional si estamos logueamos */}
+          {
+            auth && <NavLink className="nav-link" to="/admin" style={({isActive})=>(isActive ? activeStyle : undefined)} >Admin</NavLink>
+          }
             {/* <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">About</Nav.Link> */}
+            <button className='btn btn-outline-dark'
+            onClick={()=>auth ? LogOut() : LogIn()}
+            >
+              {auth ? 'LogOut' : 'LogIn'}
+            </button>
           </Nav>
         </Navbar.Collapse>
       </Container>
