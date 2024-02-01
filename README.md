@@ -5,7 +5,7 @@
 ## Tecnologías Utilizadas
 
 - [React](https://es.reactjs.org/)
-- [React Router DOM](https://reactrouter.com/web/guides/quick-start)
+- [React Router DOM](https://reactrouter.com)
 - [Bootstrap](https://getbootstrap.com/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 
@@ -20,8 +20,6 @@
    ```bash
    git clone https://github.com/CosmeNicolas/RutasReact.git
   
-  Inicia el proyecto
-```bash
    npm run dev
 
 
