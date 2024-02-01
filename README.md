@@ -1,8 +1,27 @@
-# React + Vite
+# RutasReact 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+"Rutas React" es un proyecto que demuestra la implementación de rutas de navegación en una aplicación React utilizando la biblioteca `react-router-dom`. El enfoque principal del proyecto es crear una experiencia de navegación fluida y organizada dentro de la aplicación mediante la definición de rutas para diferentes componentes.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://es.reactjs.org/)
+- [React Router DOM](https://reactrouter.com/web/guides/quick-start)
+- [Bootstrap](https://getbootstrap.com/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+
+## Descripción
+
+"Rutas React" es un proyecto que emplea react-router-dom para gestionar las rutas de navegación en una aplicación React. Destaca por implementar lógica de protección en ciertas rutas para garantizar la seguridad y accesibilidad solo a usuarios autenticados o con permisos específicos. El objetivo es ofrecer una experiencia de navegación ordenada y controlada en la aplicación.
+
+
+## Instalación 
+
+ Clona el repositorio
+   ```bash
+   git clone https://github.com/CosmeNicolas/RutasReact.git
+  
+  Inicia el proyecto
+```bash
+   npm run dev
+
+
